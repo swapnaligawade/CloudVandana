@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(135deg,#f8faf6 0%,#edf3ee 100%);color:#15271e;font-family:'DM Sans',sans-serif}
+main{max-width:1320px;margin:auto;padding:48px 32px 64px}
+header{display:flex;justify-content:space-between;align-items:start;border-bottom:1px solid #d9dfd8;padding-bottom:30px;gap:24px}
+.eyebrow{display:block;color:#38735a;font-size:.72rem;font-weight:700;letter-spacing:.14em}
+h1{font-family:'Playfair Display',serif;font-size:3rem;line-height:1.08;margin:5px 0}
+.subtitle{margin:10px 0 0;color:#64756b;font-size:.98rem}
+.landing{max-width:700px;padding-top:19vh}
+.landing h1{font-size:4.5rem;line-height:1.06}
+.landing p{font-size:1.15rem;line-height:1.7;color:#53655b;max-width:560px}
+.login,button{border:0;background:#1c6b4c;color:#fff;border-radius:6px;padding:11px 17px;font:600 .9rem inherit;cursor:pointer}
+.login{display:inline-block;text-decoration:none;margin-top:16px}
+.toolbar{display:flex;align-items:end;justify-content:space-between;margin:28px 0 20px;padding:20px 22px;background:#fff;border:1px solid #dce5dd;border-radius:12px;box-shadow:0 8px 24px #17372608}
+.object-picker,.toolbar-actions{display:flex;align-items:end;gap:14px}
+.record-count{padding:10px 12px;border-radius:6px;background:#eef5ef;color:#397054;font-size:.82rem;font-weight:700}
+label{display:flex;flex-direction:column;gap:6px;font-size:.8rem;font-weight:700;color:#526258}
+select,input{border:1px solid #cbd5cc;border-radius:5px;background:#fff;color:#17291f;padding:10px;font:400 .95rem inherit;min-width:220px}
+.table-wrap{overflow:auto;background:#fff;border:1px solid #dde4dd;border-radius:12px;box-shadow:0 8px 24px #17372608}
+table{border-collapse:collapse;width:100%;min-width:760px}
+th,td{padding:16px 18px;text-align:left;border-bottom:1px solid #edf0ed;font-size:.9rem;max-width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+th{color:#597064;background:#f7faf7;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em}
+tbody tr{transition:background .15s ease}
+tbody tr:hover{background:#f5faf6}
+.actions-heading{text-align:right}
+.row-actions{display:flex;justify-content:flex-end;gap:14px}
+.link,.danger{background:none;padding:0;border-radius:0}
+.link{color:#1c6b4c}
+.danger{color:#bd4036}
+.user{display:flex;gap:14px;align-items:center;justify-content:flex-end;flex-wrap:wrap;color:#526258;font-size:.88rem;max-width:54%}
+.instance-url{max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#708076}
+.loading,.empty{text-align:center;padding:20px;color:#748278}
+.error{background:#feeceb;color:#912820;padding:12px 16px;border-radius:6px;margin-bottom:18px;cursor:pointer}
+.form-error{grid-column:1/-1;margin:0;cursor:default}
+.backdrop{position:fixed;inset:0;background:#15271e88;display:grid;place-items:center;padding:20px}
+.modal{background:#fff;width:min(720px,100%);max-height:90vh;overflow:auto;padding:30px;border-radius:14px;box-shadow:0 20px 60px #15271e44}
+.modal h2{margin-top:0;font-family:'Playfair Display',serif}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form label{font-size:.8rem}
+.form input,.form select{width:100%;min-width:0}
+.actions{grid-column:1/-1;display:flex;justify-content:flex-end;gap:12px;margin-top:8px}
+.record-view{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.record-view div{border:1px solid #edf0ed;border-radius:6px;padding:12px;background:#fbfcfa}
+.record-view span{display:block;color:#607166;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.record-view strong{display:block;margin-top:6px;font-size:.95rem;word-break:break-word}
+.secondary{background:#e7ece8;color:#274434}
+.center{padding-top:30vh;text-align:center}
+
+@media(max-width:650px){
+  main{padding:28px 18px}
+  header{gap:15px;flex-direction:column}
+  .user{max-width:100%;justify-content:flex-start}
+  .landing h1{font-size:3.2rem}
+  .form,.record-view{grid-template-columns:1fr}
+  .toolbar,.object-picker,.toolbar-actions{align-items:stretch;gap:12px;flex-direction:column}
+  .toolbar button{align-self:stretch}
+}
