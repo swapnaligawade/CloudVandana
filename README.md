@@ -18,6 +18,8 @@ A React + Node.js web application for OAuth-secured CRUD operations on Salesforc
 
 ## Production deployment
 
+Live application: [https://cloudvandana-salesforce-crud.vercel.app](https://cloudvandana-salesforce-crud.vercel.app)
+
 Set `APP_URL` to the deployed app origin and `SF_REDIRECT_URI` to `https://your-domain/auth/callback`; add that exact callback URL to the External Client App. Run `npm run build`, then start with `NODE_ENV=production npm start`. The Express server serves the built React application.
 
 ## Security notes
